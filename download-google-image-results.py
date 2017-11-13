@@ -22,16 +22,14 @@ def download_images(image_search_query, number, max_height=None):
     n_downloaded = 0
     for im in images:
         try:
-            im_format = im.format
-            im_path = str(im_dir / '{}.{}'.format(n_downloaded, im_format))
+            im_path = str(im_dir / '{}.jpg'.format(n_downloaded))
             # resize, if necessary, then save
             xsize, ysize = im.size
             if max_height is not None and ysize > max_height:
                 im_to_save = im.reduce(new_height=max_height)
                 im_to_save.save(im_path)
             else:
-                with open(im_path, 'wb') as f:
-                    f.write(im.content.getvalue())
+                im._im.save(im_path)
             n_downloaded += 1
         except Exception as err:
             print('Failed download of image {}: {}'.format(im.URL, err))
