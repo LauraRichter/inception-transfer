@@ -3,6 +3,10 @@ Transfer learning using Tensorflow
 
 ## Preparation
 
+### Install requirements
+
+> pip3 install -r requirements.txt
+
 ### Images
 
 You will need image data sets, containing 200+ images for each category you would like to classify.
