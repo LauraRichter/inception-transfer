@@ -6,7 +6,11 @@ import click
 @click.command()
 @click.argument('image_search_query')
 @click.option('--number', default=5, help='Number of images to download.')
-def download_images(image_search_query, number):
+@click.option(
+    '--max-height',
+    type=int,
+    help='Max height to download image at (images with larger height will be downscaled).')
+def download_images(image_search_query, number, max_height=None):
     """Do google image search for supplied query string and save specified number of results."""
     soup = ImageSoup()
     # do google image search for given query
@@ -22,9 +26,8 @@ def download_images(image_search_query, number):
             im_path = str(im_dir / '{}.{}'.format(n_downloaded, im_format))
             # resize, if necessary, then save
             xsize, ysize = im.size
-            max_size = 200
-            if ysize > max_size:
-                im_to_save = im.reduce(new_height=max_size)
+            if max_height is not None and ysize > max_height:
+                im_to_save = im.reduce(new_height=max_height)
                 im_to_save.save(im_path)
             else:
                 with open(im_path, 'wb') as f:
