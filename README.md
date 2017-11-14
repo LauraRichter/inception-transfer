@@ -49,7 +49,7 @@ If you use the automatic google image download scripts, take a look through the 
 
 ```
 > python tensorflow/tensorflow/examples/image_retraining/retrain.py \
-    --bottleneck_dir ./outout/bottlenecks \
+    --bottleneck_dir ./output/bottlenecks \
     --how_many_training_steps 5000 \
     --model_dir ./output/inception \
     --output_graph ./output/retrained_graph.pb \
