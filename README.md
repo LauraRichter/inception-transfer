@@ -1,7 +1,7 @@
 # inception-transfer
-Transfer learning using Tensorflow
+Transfer learning using Tensorflow, retraining the Inception model.
 
-## Preparation
+## 1. Preparation
 
 ### Install requirements
 
@@ -34,4 +34,16 @@ You can optionally create these data sets by downloading google image search res
 > python3 download-google-image-results.py 'jacob zuma' --number 250 --max-height 300
 
 Take a look through the directories and remove images that aren't approptiate for training - pictures that aren't actually of the desired target class, or have objects of more than one of the target classes in them.
+
+---
+
+## 2. Retrain Inception
+
+## 3. Use models to label images
+
+
+
+
+
+
 
