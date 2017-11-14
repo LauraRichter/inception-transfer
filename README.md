@@ -65,7 +65,7 @@ Use the model we just trained to label an image that wasn't in the original trai
 > python tensorflow/tensorflow/examples/label_image/label_image.py \
     --graph ./output/retrained_graph.pb \
     --labels ./output/retrained_labels.txt \
-    --image <some_image_to_label> \
+    --image ./example_images/jacob_zuma.jpg \
     --input_layer Mul \
     --input_height 299 \
     --input_width 299 \
@@ -78,7 +78,7 @@ And compare this with the output the original Inception model would have given u
 > python tensorflow/tensorflow/examples/label_image/label_image.py \
     --graph ./output/inception/classify_image_graph_def.pb \
     --labels ./output/inception/imagenet_synset_to_human_label_map.txt \
-    --image <some_image_to_label> \
+    --image ./example_images/jacob_zuma.jpg \
     --input_layer Mul \
     --input_height 299 \
     --input_width 299 \
