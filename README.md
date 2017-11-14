@@ -29,7 +29,11 @@ Start with a directory named "images", containing sub-directories named after yo
 
 > images/jacob_zuma
   
-You can optionally create these data sets by downloading google image search results, using [download-google-image-results.py](download-google-image-results.py) as follows:
+You can optionally create these data sets by downloading google image search results, either by:
+
+(a) using a plugin like the [Fatkun chrome extension](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en), or
+
+(b) using the [download-google-image-results.py](download-google-image-results.py) script supplied here as follows:
 
 ```
 > python3 download-google-image-results.py 'nelson mandela' --number 250 --max-height 300
