@@ -78,7 +78,7 @@ And compare this with the output the original Inception model would have given u
     --input_layer Mul \
     --input_height 299 \
     --input_width 299 \
-    --output_layer "final_result"
+    --output_layer "softmax"
 ```
 
 
