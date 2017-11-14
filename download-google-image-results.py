@@ -27,9 +27,12 @@ def download_images(image_search_query, number, max_height=None):
             xsize, ysize = im.size
             if max_height is not None and ysize > max_height:
                 im_to_save = im.reduce(new_height=max_height)
-                im_to_save.save(im_path)
             else:
-                im._im.save(im_path)
+                im_to_save = (im._im)
+
+            im_to_save = im_to_save.convert("RGB")
+            im_to_save.save(im_path)
+
             n_downloaded += 1
         except Exception as err:
             print('Failed download of image {}: {}'.format(im.URL, err))
