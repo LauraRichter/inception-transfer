@@ -5,13 +5,17 @@ Transfer learning using Tensorflow, retraining the Inception model.
 
 ### Install requirements
 
+```
 > pip3 install -r requirements.txt
+```
 
 ### Clone the full Tensorflow repo
 
 Clone the full Tensorflow repo so we can use the example scripts, which aren't avalable in the pip installed version.
 
+```
 > git clone https://github.com/tensorflow/tensorflow
+```
 
 ### Images
 
@@ -27,11 +31,11 @@ Start with a directory named "images", containing sub-directories named after yo
   
 You can optionally create these data sets by downloading google image search results, using [download-google-image-results.py](download-google-image-results.py) as follows:
 
+```
 > python3 download-google-image-results.py 'nelson mandela' --number 250 --max-height 300
-
 > python3 download-google-image-results.py 'thabo mbeki' --number 250 --max-height 300
-
 > python3 download-google-image-results.py 'jacob zuma' --number 250 --max-height 300
+```
 
 If you use the automatic google image download scripts, take a look through the directories and remove images that aren't approptiate for training - pictures that aren't actually of the desired target class, or have objects of more than one of the target classes in them.
 
@@ -39,6 +43,7 @@ If you use the automatic google image download scripts, take a look through the 
 
 ## 2. Retrain Inception
 
+```
 > python tensorflow/tensorflow/examples/image_retraining/retrain.py \
     --bottleneck_dir=./outout/bottlenecks \
     --how_many_training_steps 5000 \
@@ -46,6 +51,7 @@ If you use the automatic google image download scripts, take a look through the 
     --output_graph=./output/retrained_graph.pb \
     --output_labels=./output/retrained_labels.txt \
     --image_dir ./images/
+```
 
 ## 3. Use models to label images
 
