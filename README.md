@@ -33,7 +33,7 @@ You can optionally create these data sets by downloading google image search res
 
 > python3 download-google-image-results.py 'jacob zuma' --number 250 --max-height 300
 
-Take a look through the directories and remove images that aren't approptiate for training - pictures that aren't actually of the desired target class, or have objects of more than one of the target classes in them.
+If you use the automatic google image download scripts, take a look through the directories and remove images that aren't approptiate for training - pictures that aren't actually of the desired target class, or have objects of more than one of the target classes in them.
 
 ---
 
