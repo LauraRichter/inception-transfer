@@ -68,6 +68,19 @@ Use the model we just trained to label an image that wasn't in the original trai
     --output_layer "final_result"
 ```
 
+And compare this with the output the original Inception model would have given us for this same image:
+
+```
+> python tensorflow/tensorflow/examples/label_image/label_image.py \
+    --graph output/inception/classify_image_graph_def.pb \
+    --labels output/inception/imagenet_synset_to_human_label_map.txt \
+    --image <some_image_to_label> \
+    --input_layer Mul \
+    --input_height 299 \
+    --input_width 299 \
+    --output_layer "final_result"
+```
+
 
 
 
