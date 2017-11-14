@@ -7,6 +7,12 @@ Transfer learning using Tensorflow
 
 > pip3 install -r requirements.txt
 
+### Clone the full Tensorflow repo
+
+Clone the full Tensorflow repo so we can use the example scripts, which aren't avalable in the pip installed version.
+
+> git clone https://github.com/tensorflow/tensorflow
+
 ### Images
 
 You will need image data sets, containing 200+ images for each category you would like to classify.
