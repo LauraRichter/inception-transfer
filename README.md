@@ -1,5 +1,5 @@
 # inception-transfer
-Transfer learning using Tensorflow, retraining the Inception model. [Inception-v3](https://arxiv.org/abs/1512.00567) is a CNN image classification model that was trained using [ImageNet](http://image-net.org/) data in 2012, for the Large Visual Recognition Challenge. 
+Transfer learning using Tensorflow, retraining the Inception model. [Inception-v3](https://arxiv.org/abs/1512.00567) is a CNN image classification model that was trained using [ImageNet](http://image-net.org/) data, for the Large Visual Recognition Challenge. 
 
 ## 1. Preparation
 
