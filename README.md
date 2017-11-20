@@ -6,18 +6,6 @@ Examples around the topic of transfer learning using Tensorflow, by retraining t
 * Example 2: **Building a CNN** - Building an Inception style model from scratch
 * Example 3: **What are these convolutions you speak of?** - Playing with convolutions
 
-## 1. Preparation
+## Preparation
 
-### Install requirements
-
-```
-> pip3 install -r requirements.txt
-```
-
-### Clone the full Tensorflow repo
-
-Clone the full Tensorflow repo so we can use the example scripts, which aren't avalable in the pip installed version.
-
-```
-> git clone https://github.com/tensorflow/tensorflow
-```
+These tutorials use python3. The dependencies for each example are given in the example directories.
