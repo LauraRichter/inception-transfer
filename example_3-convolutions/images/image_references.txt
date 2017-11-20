@@ -1,0 +1,5 @@
+bob_ross_small.png
+https://www.biography.com/news/bob-ross-biography-facts
+
+alexnet-<1-4>-small.png
+http://cs231n.github.io/convolutional-networks/
